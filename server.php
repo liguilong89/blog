@@ -1,7 +1,7 @@
 <?php
 
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-
+// good
 $uri = urldecode($uri);
 
 $paths = require __DIR__.'/bootstrap/paths.php';
@@ -15,5 +15,5 @@ if ($uri !== '/' and file_exists($requested))
 {
 	return false;
 }
-
+// 这里是另一个修改
 require_once $paths['public'].'/index.php';
