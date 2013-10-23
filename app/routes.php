@@ -19,3 +19,4 @@ Route::get('/', function()
 Route::resource('posts', 'PostsController');
 
 Route::resource('pages', 'PagesController');
+Route::resource('users', 'UsersController');
